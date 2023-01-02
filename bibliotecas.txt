@@ -1,5 +1,0 @@
-RFValue
-https://github.com/heyman333/react-native-responsive-fontsize
-yarn add react-native-responsive-fontsize
-
-salvar no git

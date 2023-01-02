@@ -5,66 +5,72 @@ import { Dimensions } from "react-native";
 const dimensions = Dimensions.get('screen')
 
 const styles = StyleSheet.create({
-  container: {
+
+  SAFE_CONTAINER: {
     height: dimensions.height,
     width: dimensions.width,
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "space-between",
   },
-  container1: {
+
+  VIEW_CONTAINER1: {
     flex: 0.3,
     backgroundColor: '#fff',
     alignItems: "center",
     justifyContent: "flex-end",
     width: '100%'
   },
-  container2: {
+
+  VIEW_CONTAINER2: {
     flex: 0.7,
     backgroundColor: '#fff',
     alignItems: "center",
     justifyContent: "center",
     width: '100%',
+    marginTop: RFValue(5),
   },
 
   //  ============================= INPUT STYLE
 
-  viewInput: {
+  VIEW_INPUT: {
     alignItems: "center",
     justifyContent: "center",
     width: '100%',
-    marginBottom: RFValue(20),
+    marginBottom: RFValue(5),
   },
-  input: {
+
+  INPUT: {
     width: '90%',
     height: RFValue(50),
-    backgroundColor:'#c2c2c290',
+    backgroundColor:'#e2e2e299',
     paddingLeft: RFValue(10),
     borderRadius: RFValue(10),
-    fontSize: RFValue(18),
-    fontFamily: 'Montserrat-Regular'
+    fontSize: RFValue(16),
+    fontFamily: 'Montserrat-Regular',
   },
+
 
   //  ============================= TITLE STYLE
 
-  title: {
+  TEXT_TITLE: {
     fontSize: RFValue(22),
     color: '#9316a5',
-    marginBottom: RFValue(20),
+    marginBottom: RFValue(10),
     textAlign: 'center',
     fontFamily: 'Montserrat-Bold'
   },
 
   //  ============================= FLATLIST STYLE
 
-  flatList: {
+  FLATLIST: {
     width: dimensions.width,
     paddingTop: RFValue(10),
     paddingBottom: RFValue(5),
     marginBottom: RFValue(5),
   },
 
-  renderViewFlatList: {
+  VIEW_CARD: {
     width: '100%',
     alignItems: 'center',
     justifyContent: 'center',
@@ -72,19 +78,21 @@ const styles = StyleSheet.create({
 
   //  ============================= BUTTON STYLE
 
-  touchable: {
+  TOUCHABLE_CARD: {
     width: Dimensions.get('screen').width - RFValue(35),
     height: RFValue(40),
     borderRadius: RFValue(10),
-    backgroundColor: '#a040d5' ,
+    borderWidth: RFValue(1),
+    borderColor: '#a040d5',
     alignContent: 'center',
     justifyContent: 'center',
     marginBottom: RFValue(10),
   },
-  text: {
+  
+  TEXT_TOUCHABLE_CARD: {
     textAlign: 'center',
-    fontSize: RFValue(20),
-    color: '#fff',
+    fontSize: RFValue(18),
+    color: '#9316a5',
     fontFamily: 'Montserrat-Regular'
   }
 });

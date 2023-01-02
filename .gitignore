@@ -12,3 +12,22 @@ web-build/
 
 # macOS
 .DS_Store
+
+# Database
+./src/base/
+
+# Service API
+./src/services/
+
+# Libs
+libs.txt
+
+# .Lock
+*.lock
+
+# package-lock
+package-lock.json
+
+# eas expo
+eas.json
+

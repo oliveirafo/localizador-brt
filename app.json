@@ -1,13 +1,13 @@
 {
   "expo": {
     "name": "Localizar BRT",
-    "slug": "localizar-brt",
+    "slug": "localizarbrt",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./src/assets/images/assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./src/assets/images/assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -22,12 +22,19 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./src/assets/images/assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.oliveirafocs.localizarbrt",
+      "versionCode": 1
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./src/assets/images/assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "7b612898-858b-449d-b951-7a1a122465ff"
+      }
     }
   }
 }
