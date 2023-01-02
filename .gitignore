@@ -20,14 +20,14 @@ web-build/
 ./src/services/
 
 # Libs
-libs.txt
+./libs.txt
 
 # .Lock
-yarn.lock
+./yarn.lock
 
 # package-lock
 package-lock.json
 
 # eas expo
-eas.json
+./eas.json
 

@@ -1,0 +1,7 @@
+RFValue
+https://github.com/heyman333/react-native-responsive-fontsize
+yarn add react-native-responsive-fontsize
+
+react-native-animated-loader
+https://github.com/vikrantnegi/react-native-animated-loader
+yarn add react-native-animated-loader
