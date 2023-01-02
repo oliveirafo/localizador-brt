@@ -23,7 +23,7 @@ web-build/
 libs.txt
 
 # .Lock
-*.lock
+yarn.lock
 
 # package-lock
 package-lock.json
