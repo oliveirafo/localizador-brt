@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
 
   TEXT_TITLE_STATION_INFO: {
     textAlign: 'center',
-    fontFamily: 'Montserrat-Bold',
+    fontFamily: 'B-Inline-Regular',
     fontSize: RFValue(25)
   },
 
@@ -52,8 +52,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     elevation: 30,
-    shadowColor: '#0d4f8899',
-    borderColor: '#0d4f88',
+    shadowColor: '#9316a5',
   },
   
   TEXT_STATION_CARD: {
@@ -112,7 +111,7 @@ const styles = StyleSheet.create({
     height: RFValue(60),
     width: RFValue(180),
     borderWidth: RFValue(1),
-    borderColor: '#0d4f88',
+    borderColor: '#9316a5',
     borderRadius: RFValue(20),
     alignItems: 'center',
     justifyContent: 'center',

@@ -15,6 +15,7 @@ export default function Station ({route}) {
   const [lenList, setLenList] = useState(0);
   const [list, setList] = useState([]);
   const [lines, setLines] = useState([])
+  const emptyListTitle = 'Em breve serão exibidas as informações de localização dos próximos veículos'
 
   function getLines () {
     const array = params?.linhas
@@ -84,15 +85,12 @@ export default function Station ({route}) {
         data={lines}
         keyExtractor={item => item?.id}
         renderItem={({item}) => 
-        
 
           <TouchableOpacity style={styles.TOUCHABLE_LINES_CARD}>
             <Text style={styles.TEXT_LINES_STYLE}>
               {item?.id}
             </Text> 
           </TouchableOpacity>
-
-
           
         }
       />
@@ -101,7 +99,7 @@ export default function Station ({route}) {
     <View style={styles.VIEW_FLAT_LIST}>
         <FlatList 
           showsVerticalScrollIndicator={false}
-          ListEmptyComponent={<Construct title='Em breve serão exibidas as informações de localização dos próximos veículos' />}
+          ListEmptyComponent={<Construct title={emptyListTitle} />}
           initialNumToRender={10}
           data={[]}
           keyExtractor={ item => item?.vei_nro_gestor  }

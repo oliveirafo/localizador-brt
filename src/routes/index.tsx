@@ -11,6 +11,7 @@ const Routes = () => {
   const [fontsLoaded] = useFonts({
     'Montserrat-Regular': require('../assets/fonts/Montserrat-Regular.ttf'),
     'Montserrat-Bold': require('../assets/fonts/Montserrat-Bold.ttf'),
+    'B-Inline-Regular': require('../assets/fonts/B-Inline-Regular.ttf')
   });
 
   return (
