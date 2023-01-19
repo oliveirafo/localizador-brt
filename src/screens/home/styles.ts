@@ -7,15 +7,14 @@ const dimensions = Dimensions.get('screen')
 const styles = StyleSheet.create({
 
   SAFE_CONTAINER: {
-    height: dimensions.height,
-    width: dimensions.width,
+    flex: 1,
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "space-between",
   },
 
   VIEW_CONTAINER1: {
-    flex: 0.3,
+    height: dimensions.height / 3.3,
     backgroundColor: '#fff',
     alignItems: "center",
     justifyContent: "flex-end",
@@ -23,12 +22,12 @@ const styles = StyleSheet.create({
   },
 
   VIEW_CONTAINER2: {
-    flex: 0.7,
+    height: dimensions.height / 1.5,
     backgroundColor: '#fff',
     alignItems: "center",
     justifyContent: "center",
     width: '100%',
-    marginTop: RFValue(5),
+    marginTop: 5,
   },
 
   //  ============================= INPUT STYLE
@@ -37,15 +36,15 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     width: '100%',
-    marginBottom: RFValue(5),
+    marginBottom: 5,
   },
 
   INPUT: {
     width: '90%',
-    height: RFValue(50),
+    height: 50,
     backgroundColor:'#e2e2e299',
-    paddingLeft: RFValue(10),
-    borderRadius: RFValue(10),
+    paddingLeft: 10,
+    borderRadius: 10,
     fontSize: RFValue(16),
     fontFamily: 'Montserrat-Regular',
   },
@@ -56,7 +55,7 @@ const styles = StyleSheet.create({
   TEXT_TITLE: {
     fontSize: RFValue(22),
     color: '#9316a5',
-    marginBottom: RFValue(10),
+    marginBottom: 10,
     textAlign: 'center',
     fontFamily: 'Montserrat-Bold'
   },
@@ -65,9 +64,9 @@ const styles = StyleSheet.create({
 
   FLATLIST: {
     width: dimensions.width,
-    paddingTop: RFValue(10),
-    paddingBottom: RFValue(5),
-    marginBottom: RFValue(5),
+    paddingTop: 10,
+    paddingBottom: 5,
+    marginBottom: 5,
   },
 
   VIEW_CARD: {
@@ -80,18 +79,18 @@ const styles = StyleSheet.create({
 
   TOUCHABLE_CARD: {
     width: Dimensions.get('screen').width - RFValue(35),
-    height: RFValue(40),
-    borderRadius: RFValue(10),
-    borderWidth: RFValue(1),
+    height: 40,
+    borderRadius: 10,
+    borderWidth: 0.5,
     borderColor: '#a040d5',
     alignContent: 'center',
     justifyContent: 'center',
-    marginBottom: RFValue(10),
+    marginBottom: 10,
   },
   
   TEXT_TOUCHABLE_CARD: {
     textAlign: 'center',
-    fontSize: RFValue(18),
+    fontSize: RFValue(16),
     color: '#9316a5',
     fontFamily: 'Montserrat-Regular'
   }

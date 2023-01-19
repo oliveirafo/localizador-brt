@@ -12,9 +12,10 @@ const styles = StyleSheet.create({
     },
 
     IMG: {
-        width: RFValue(70),
+        width: RFValue(150),
         height: RFValue(70),
         borderRadius: 50
+
     }
 })
 

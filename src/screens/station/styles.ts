@@ -17,26 +17,26 @@ const styles = StyleSheet.create({
   VIEW_CONTAINER_TITLE: {
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: RFValue(10),
+    marginTop: 10,
   },
 
   VIEW_TITLE: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: RFValue(20),
+    marginTop: 20,
   },
 
   VIEW_IMAGE: {
     justifyContent: 'center',
     alignItems: 'center',
-    marginBottom: RFValue(20),
+    marginBottom: 20,
   },
 
   VIEW_INFO_LOCAL: {
     justifyContent: 'center',
     alignItems: 'center',
-    marginRight: RFValue(20)
+    marginRight: 20
   },
 
   TEXT_TITLE_STATION_INFO: {
@@ -46,9 +46,9 @@ const styles = StyleSheet.create({
   },
 
   VIEW_STATION_CARD: {
-    height: RFValue(50),
-    width: RFValue(Dimensions.get('screen').width - 20),
-    borderRadius: RFValue(50),
+    height: 50,
+    width: Dimensions.get('screen').width - 20,
+    borderRadius: 50,
     alignItems: 'center',
     justifyContent: 'center',
     elevation: 30,
@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
 
   VIEW_FUNC: {
     flexDirection: 'column',
-    marginTop: RFValue(20),
+    marginTop: 20
   },
 
   TEXT_HOUR: {
@@ -77,15 +77,15 @@ const styles = StyleSheet.create({
     fontFamily: 'Montserrat-Regular', 
     fontSize: RFValue(16),
     textAlign: 'center',
-    marginTop: RFValue(5)
+    marginTop: 5
   },
   
   /*================== VIEW VEHICLES NEARBY ==================*/ 
 
   VIEW_VEHICLES: {
     flexDirection: 'row',
-    marginTop: RFValue(40),
-    marginBottom: RFValue(12)
+    marginTop: 40,
+    marginBottom: 12,
   },
 
   TEXT_VEHIC_TITLE: {
@@ -101,20 +101,23 @@ const styles = StyleSheet.create({
   /* ================== VIEW LINHAS ================== */
 
   VIEW_LINES: {
-    width: dimensions.width - RFValue(20),
+    width: dimensions.width - 20,
     alignItems: 'center',
     justifyContent: 'center',
   },
 
   TOUCHABLE_LINES_CARD: {
-    marginHorizontal: RFValue(5),
-    height: RFValue(60),
-    width: RFValue(180),
-    borderWidth: RFValue(1),
-    borderColor: '#9316a5',
-    borderRadius: RFValue(20),
+    marginHorizontal: 5,
+    height: dimensions.height / 10,
+    width: dimensions.height / 3,
+    borderWidth: 1,
+    borderColor: '#9316a599',
+    borderRadius: 20,
     alignItems: 'center',
     justifyContent: 'center',
+    padding: 15,
+    maxWidth: 350,
+    maxHeight: 80,
   },
 
   TEXT_LINES_STYLE: {
@@ -126,17 +129,17 @@ const styles = StyleSheet.create({
    /* ================== VIEW FLATLIST ================== */
 
   VIEW_FLAT_LIST: {
-    width: dimensions.width - RFValue(15),
-    padding: RFValue(5),
+    width: dimensions.width - 15,
+    padding: 5
   },
 
 
   VIEW_CARD: {
     justifyContent: 'center',
     alignItems: 'center',
-    height: RFValue(150), 
-    marginHorizontal: RFValue(4), 
-    marginTop: RFValue(20)
+    height: 150,
+    marginHorizontal: 4,
+    marginTop: 20
   },
 
 

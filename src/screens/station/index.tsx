@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, FlatList, TouchableOpacity, Dimensions } from 'react-native';
+import { View, Text, FlatList, TouchableOpacity, Image } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-
 import styles from './styles';
 import { LocalStationIcon } from '../../components/icons';
 import { Loading } from '../../components/loading';
@@ -16,14 +15,13 @@ export default function Station ({route}) {
   const [list, setList] = useState([]);
   const [lines, setLines] = useState([])
   const emptyListTitle = 'Em breve serão exibidas as informações de localização dos próximos veículos'
-
-  function getLines () {
-    const array = params?.linhas
-    setLines( array.map( (id) => Object.assign({},{id}) ));
-  };
   
-
   useEffect(() => {
+    function getLines () {
+      const array = params?.linhas
+      setLines( array.map( (id) => Object.assign({},{id}) ));
+    };
+
     getLines();
     //get_data(setList, setLenList)
   }, []);
@@ -39,7 +37,7 @@ export default function Station ({route}) {
           </View>
           <View style={styles.VIEW_INFO_LOCAL}>
             <Text style={styles.TEXT_TITLE_STATION_INFO}> 
-              Você está em:
+              Você está em 
             </Text>
           </View>
         </View>
@@ -72,7 +70,7 @@ export default function Station ({route}) {
         </View>
         <View>
           <Text style={styles.TEXT_COUNTER}>
-            { params?.linhas.length }
+            { params?.linhas?.length }
           </Text>
         </View>
       </View>
@@ -87,9 +85,15 @@ export default function Station ({route}) {
         renderItem={({item}) => 
 
           <TouchableOpacity style={styles.TOUCHABLE_LINES_CARD}>
-            <Text style={styles.TEXT_LINES_STYLE}>
-              {item?.id}
-            </Text> 
+            <View style={{flex: 1, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', marginHorizontal: 20}}>
+              <Image 
+                style={{width: 40, height: 40, borderRadius: 20}}
+                source={require('../../assets/images/horizontalCard/brt-card.png')}
+              />
+              <Text style={styles.TEXT_LINES_STYLE}>
+                {item?.id}
+              </Text> 
+            </View>
           </TouchableOpacity>
           
         }

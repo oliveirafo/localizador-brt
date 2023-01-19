@@ -46,7 +46,7 @@ export default function Home () {
         <Logo />
         <View style={styles.VIEW_INPUT}>
           <Text style={styles.TEXT_TITLE}>
-            SELECIONE SUA ESTAÇÃO
+            Busque sua estação
           </Text>
           <TextInput style={styles.INPUT}
             placeholder="Digite o nome da estação"
